@@ -1,0 +1,26 @@
+---
+title: "Module6-repo-test"
+author: "Stella Lin"
+date: "2026-01-22"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+# This is a test markdown file for module 6
+sample code is attached below
+
+```{r}
+say_hi <- function(x) {
+    hi <- paste("Greetings, ", x, "!", sep = "")
+    return(hi)
+}
+name1 <- "Rick Grimes"
+name2 <- "Ruth Bader Ginsburg"
+say_hi(name1)
+```
+
