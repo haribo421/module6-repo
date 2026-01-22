@@ -1,0 +1,55 @@
+---
+title: "test-example-week2"
+format: html
+author: Stella Lin
+editor: visual
+---
+
+## This is my test Quarto file
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+# Standard code block
+```{r}
+x <- 1
+print(x)
+log(-x)
+```
+# Excluded output
+```{r}
+#| eval: false
+x <- 3
+print(x)
+log(-x)
+```
+# Excluded warnings
+```{r}
+#| warning: false
+x <- 4
+print(x)
+log(-4)
+```
+# suppress everything
+```{r}
+#| include: false
+x <- 5
+print(x)
+log(-x)
+```
